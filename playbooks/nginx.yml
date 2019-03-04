@@ -1,0 +1,12 @@
+---
+- hosts:all
+  become: yes
+  tasks:
+   -name: "installing nginx"
+    yum:
+       name: nginx
+	state: present
+   -name: "Ensure the service is stopped"
+    service:
+	name: nginx
+	state: stopped
