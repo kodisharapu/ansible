@@ -1,0 +1,4 @@
+localhost 	 ansible_connection=local
+
+[client]
+ip-172-31-19-226
